@@ -1,10 +1,10 @@
-// HAVE_COPYSIGN : BUILD2_AUTOCONF_LIBC_VERSION
+// HAVE_COPYSIGNL : BUILD2_AUTOCONF_LIBC_VERSION
 
 #ifndef BUILD2_AUTOCONF_LIBC_VERSION
 #  error BUILD2_AUTOCONF_LIBC_VERSION appears to be conditionally included
 #endif
 
-#undef HAVE_COPYSIGN
+#undef HAVE_COPYSIGNL
 
 /*  Since glibc 2.19, 4.3BSD, FreeBSD 1.0, OpenBSD 2.0, NetBSD 1.0, MacOS, Mingw-w64 2.0
  *  POSIX.1, SVr4
@@ -17,5 +17,5 @@
     defined(_WIN32) || \
     defined(BUILD2_AUTOCONF_MACOS) || \
     ((defined(__sun) && defined(__SVR4)) || defined(__sun__))
-#  define HAVE_COPYSIGN 1
+#  define HAVE_COPYSIGNL 1
 #endif
