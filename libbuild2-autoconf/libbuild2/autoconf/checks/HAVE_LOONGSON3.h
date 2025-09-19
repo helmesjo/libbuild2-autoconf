@@ -7,8 +7,6 @@
  *
  * Available on Linux/glibc. Not available on MacOS or Windows including MinGW.
  */
-#ifdef __loongson__
-#  if defined(__loongson3__)
-#    define HAVE_LOONGSON3 1
-#  endif
+#if defined(__loongson__) && defined(__loongson3__)
+#  define HAVE_LOONGSON3 1
 #endif

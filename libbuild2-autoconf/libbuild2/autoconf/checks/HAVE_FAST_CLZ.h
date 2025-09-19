@@ -17,11 +17,10 @@
     BUILD2_AUTOCONF_OPENBSD_PREREQ(199610) || \
     BUILD2_AUTOCONF_NETBSD_PREREQ(1, 0)    || \
     BUILD2_AUTOCONF_MACOS_PREREQ(10, 6)    || \
-    defined(_WIN32)                        || \
+    defined(_WIN64)                        || \
     defined(__CYGWIN__)                    || \
     ((defined(__sun) && defined(__SVR4)) || defined(__sun__))
-#  if defined(_WIN64)                               || \
-      defined(__x86_64__)                           || \
+#  if defined(__x86_64__)                           || \
       defined(__x86_64)                             || \
       defined(__ppc64__)                            || \
       defined(__PPC64__)                            || \

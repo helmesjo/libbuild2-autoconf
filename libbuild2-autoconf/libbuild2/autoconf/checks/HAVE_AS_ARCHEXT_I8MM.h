@@ -8,8 +8,6 @@
  *
  * Available on Linux/glibc, MacOS, Windows including MinGW.
  */
-#if defined(__ARM_ARCH)
-#  if __ARM_ARCH >= 8
-#    define HAVE_AS_ARCHEXT_I8MM 1
-#  endif
+#if defined(__ARM_ARCH) && __ARM_ARCH >= 8
+#  define HAVE_AS_ARCHEXT_I8MM 1
 #endif
